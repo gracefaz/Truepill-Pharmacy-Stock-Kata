@@ -10,6 +10,6 @@ To run the program, download the single pharmacystockkata.js file and run in Vis
 
 The Truepill test has two main parts: **1.1 Medication Available in the Pharmacy**, and **1.2 Medication Inventory**. 
 
-Section 1.1 requires us to maintain a list of medicines in the formulary (formulary meaning list of medicines). 
+**1.1** requires us to maintain a list of medicines in the formulary (formulary meaning list of medicines). 
 
-Section 1.2 requires us to add medicines to the inventory so that we can maintain stock levels of medicines in the formulary.
+**1.2** requires us to add medicines to the inventory so that we can maintain stock levels of medicines in the formulary.
