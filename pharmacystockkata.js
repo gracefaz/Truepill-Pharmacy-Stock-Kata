@@ -48,8 +48,6 @@ console.log(" ");
 // addToFormulary("Warfarin");
 // console.log(emptyForm);
 
-console.log(" ");
-
 console.log(
   "There are " +
     emptyForm.length +
