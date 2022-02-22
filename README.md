@@ -4,5 +4,6 @@ This repository contains one file (pharmacystockkata.js) which is my solution to
 
 ## Installation
 
-## Usage
+To run the program, download the single pharmacystockkata.js file.
 
+## Usage
