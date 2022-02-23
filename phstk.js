@@ -92,33 +92,45 @@ let medicine = "Paracetamol";
 
 switch (medicine) {
   case "Paracetamol":
-    console.log(
-      `Name: ${paracetamol.name}, Strength: ${paracetamol.strength}, Pack Size: ${paracetamol.packSize}, Total Packs: ${paracetamol.totalPacks}`
-    );
+    if (formulary.includes("Paracetamol")) {
+      console.log(
+        `Name: ${paracetamol.name}, Strength: ${paracetamol.strength}, Pack Size: ${paracetamol.packSize}, Total Packs: ${paracetamol.totalPacks}`
+      );
+    }
   case "Iboprufen":
-    console.log(
-      `Name: ${ibuprofen.name}, Strength: ${ibuprofen.strength}, Pack Size: ${ibuprofen.packSize}, Total Packs: ${ibuprofen.totalPacks}`
-    );
+    if (formulary.includes("Ibuprofen")) {
+      console.log(
+        `Name: ${ibuprofen.name}, Strength: ${ibuprofen.strength}, Pack Size: ${ibuprofen.packSize}, Total Packs: ${ibuprofen.totalPacks}`
+      );
+    }
   case "Amoxicillin":
-    console.log(
-      `Name: ${amoxicillin.name}, Strength: ${amoxicillin.strength}, Pack Size: ${amoxicillin.packSize}, Total Packs: ${amoxicillin.totalPacks}`
-    );
+    if (formulary.includes("Amoxicillin")) {
+      console.log(
+        `Name: ${amoxicillin.name}, Strength: ${amoxicillin.strength}, Pack Size: ${amoxicillin.packSize}, Total Packs: ${amoxicillin.totalPacks}`
+      );
+    }
   case "Tramadol":
-    console.log(
-      `Name: ${tramadol.name}, Strength: ${tramadol.strength}, Pack Size: ${tramadol.packSize}, Total Packs: ${tramadol.totalPacks}`
-    );
+    if (formulary.includes("Tramadol")) {
+      console.log(
+        `Name: ${tramadol.name}, Strength: ${tramadol.strength}, Pack Size: ${tramadol.packSize}, Total Packs: ${tramadol.totalPacks}`
+      );
+    }
   case "Codeine":
-    console.log(
-      `Name: ${codeine.name}, Strength: ${codeine.strength}, Pack Size: ${codeine.packSize}, Total Packs: ${codeine.totalPacks}`
-    );
+    if (formulary.includes("Codeine")) {
+      console.log(
+        `Name: ${codeine.name}, Strength: ${codeine.strength}, Pack Size: ${codeine.packSize}, Total Packs: ${codeine.totalPacks}`
+      );
+    }
   case "Simvastatin":
-    console.log(
-      `Name: ${simvastatin.name}, Strength: ${simvastatin.strength}, Pack Size: ${simvastatin.packSize}, Total Packs: ${simvastatin.totalPacks}`
-    );
+    if (formulary.includes("Simvastatin")) {
+      console.log(
+        `Name: ${simvastatin.name}, Strength: ${simvastatin.strength}, Pack Size: ${simvastatin.packSize}, Total Packs: ${simvastatin.totalPacks}`
+      );
+    }
   case "Warfarin":
-    console.log(
-      `Name: ${warfarin.name}, Strength: ${warfarin.strength}, Pack Size: ${warfarin.packSize}, Total Packs: ${warfarin.totalPacks}`
-    );
+    if (formulary.includes("Warfarin")) {
+      console.log(
+        `Name: ${warfarin.name}, Strength: ${warfarin.strength}, Pack Size: ${warfarin.packSize}, Total Packs: ${warfarin.totalPacks}`
+      );
+    }
 }
-
-// Warfarin is being added to the inventory even though it is not in the formulary. Need to fix this.
