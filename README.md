@@ -31,7 +31,7 @@ addToFormulary(paracetamol.name);
 ```
 After adding Paracetamol and Ibuprofen to the formulary, the formulary is printed to the console by
 ```javascript
-console.log(formulary)
+console.log(formulary);
 ```
 The same command can be used after adding more medications to check the updated formulary.
 If we tried to add a medication to the formulary which was already there, an error message would be printed telling us that one type of medication can be added to the formulary only once.
