@@ -1,3 +1,5 @@
+// 1.1 Medication Available in the Pharmacy
+
 const formulary = [];
 
 const addToFormulary = (nameOfMedicine) => {
@@ -62,8 +64,8 @@ const warfarin = {
 
 const diclofenac = {
   name: "Diclofenac",
-  strength: "N/A",
-  packSize: "N/A",
+  strength: "250mg",
+  packSize: 25,
   totalPacks: "N/A",
 };
 
@@ -84,8 +86,39 @@ console.log(
   `There are ${formulary.length} medicines in the formulary. Therefore, at most ${formulary.length} medicines can be added to the inventory.`
 );
 
-formulary.forEach((medicine) => {
-  console.log(
-    `Name: ${medicine.name}, Strength: ${medicine.strength}, Pack Size: ${medicine.packSize}, Total Packs: ${medicine.totalPacks}`
-  );
-});
+// 1.2 Medication Inventory
+
+let medicine = "Paracetamol";
+
+switch (medicine) {
+  case "Paracetamol":
+    console.log(
+      `Name: ${paracetamol.name}, Strength: ${paracetamol.strength}, Pack Size: ${paracetamol.packSize}, Total Packs: ${paracetamol.totalPacks}`
+    );
+  case "Iboprufen":
+    console.log(
+      `Name: ${ibuprofen.name}, Strength: ${ibuprofen.strength}, Pack Size: ${ibuprofen.packSize}, Total Packs: ${ibuprofen.totalPacks}`
+    );
+  case "Amoxicillin":
+    console.log(
+      `Name: ${amoxicillin.name}, Strength: ${amoxicillin.strength}, Pack Size: ${amoxicillin.packSize}, Total Packs: ${amoxicillin.totalPacks}`
+    );
+  case "Tramadol":
+    console.log(
+      `Name: ${tramadol.name}, Strength: ${tramadol.strength}, Pack Size: ${tramadol.packSize}, Total Packs: ${tramadol.totalPacks}`
+    );
+  case "Codeine":
+    console.log(
+      `Name: ${codeine.name}, Strength: ${codeine.strength}, Pack Size: ${codeine.packSize}, Total Packs: ${codeine.totalPacks}`
+    );
+  case "Simvastatin":
+    console.log(
+      `Name: ${simvastatin.name}, Strength: ${simvastatin.strength}, Pack Size: ${simvastatin.packSize}, Total Packs: ${simvastatin.totalPacks}`
+    );
+  case "Warfarin":
+    console.log(
+      `Name: ${warfarin.name}, Strength: ${warfarin.strength}, Pack Size: ${warfarin.packSize}, Total Packs: ${warfarin.totalPacks}`
+    );
+}
+
+// Warfarin is being added to the inventory even though it is not in the formulary. Need to fix this.
