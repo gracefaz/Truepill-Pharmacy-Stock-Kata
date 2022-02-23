@@ -141,7 +141,7 @@ switch (medicine) {
       );
     } else {
       console.log(
-        "Error! Codein cannot be added to the inventory as it is not in the formulary."
+        "Error! Codeine cannot be added to the inventory as it is not in the formulary."
       );
     }
   case "Simvastatin":
