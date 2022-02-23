@@ -4,6 +4,9 @@ const formulary = [];
 
 const addToFormulary = (nameOfMedicine) => {
   if (formulary.includes(nameOfMedicine)) {
+    console.log(
+      `${nameOfMedicine} is already in the formulary so cannot be added again.`
+    );
     return formulary.find(function (value, index, array) {
       array.indexOf(value) === index;
     });
