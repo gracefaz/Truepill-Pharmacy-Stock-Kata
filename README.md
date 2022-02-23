@@ -38,13 +38,13 @@ If we tried to add a medication to the formulary which was already there, an err
 
 **1.2** requires us to add medicatioins to the inventory so that we can maintain stock levels of medications in the formulary.
 
-I chose to use a switch statement for this task, starting with declaring the 'medicine' variable in the following way.
+I chose to use a switch statement for this task, starting with declaring the 'medication' variable in the following way.
 ```javascript
-let medicine = 'Paracetamol';
+let medication = 'Paracetamol';
 ```
 Then we simply need to change the cases to the different medication names. For example
 ```javascript
-switch (medicine) {
+switch (medication) {
   case "Paracetamol":
     if (formulary.includes("Paracetamol")) {
       console.log(
