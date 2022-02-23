@@ -1,91 +1,167 @@
-// 1.1 Medication Inventory
-
 // 1.1 Medication Available in the Pharmacy
 
-// Starting with an empty array called 'emptyForm' (stands for empty formulary). Medicines will be added to this array as and when they are needed.
-const emptyForm = [];
-// Function called 'addToFormulary' which takes the name of a medicine (as a string) as its input and adds this medicine to the empty array 'emptyForm'.
+const formulary = [];
+
 const addToFormulary = (nameOfMedicine) => {
-  if (emptyForm.includes(nameOfMedicine)) {
-    return emptyForm.filter(function (value, index, array) {
+  if (formulary.includes(nameOfMedicine)) {
+    console.log(
+      `${nameOfMedicine} is already in the formulary so cannot be added again.`
+    );
+    return formulary.find(function (value, index, array) {
       array.indexOf(value) === index;
     });
   } else {
-    emptyForm.push(nameOfMedicine);
-    return emptyForm;
+    formulary.push(nameOfMedicine);
+    return formulary;
   }
 };
 
-// 1. Add Paracetamol and Iboprufen to the formulary and print the updated list.
-addToFormulary("Paracetamol");
-addToFormulary("Ibuprofen");
-console.log(emptyForm);
-console.log("");
+const paracetamol = {
+  name: "Paracetamol",
+  strength: "500mg",
+  packSize: 50,
+  totalPacks: 100,
+};
 
-// 2. Add Amoxicillin to the formulary and print the updated list.
-addToFormulary("Amoxicillin");
-console.log(emptyForm);
-console.log("");
+const ibuprofen = {
+  name: "Ibuprofen",
+  strength: "500mg",
+  packSize: 50,
+  totalPacks: 100,
+};
 
-// 3. Add Codeine, Diclofenac, Simvastatin and Tramadol to the formulary and print the updated list.
-addToFormulary("Codeine");
-addToFormulary("Diclofenac");
-addToFormulary("Simvastatin");
-addToFormulary("Tramadol");
-console.log(emptyForm); // Prints to the console.
+const amoxicillin = {
+  name: "Amoxicillin",
+  strength: "250mg",
+  packSize: 20,
+  totalPacks: 20,
+};
 
-console.log(" ");
+const tramadol = {
+  name: "Tramadol",
+  strength: "50mg",
+  packSize: 100,
+  totalPacks: 5,
+};
 
-// Running the addToFormulary function again with the input of 'Paracetamol' should not add another Paracetamol element to the array, as Paracetamol is already in the array. It should print the array ['Paracetamol', 'Ibuprofen', 'Amoxicillin', 'Codeine', 'Diclofenac', 'Simvastatin', 'Tramadol']. (Uncomment the following to see this.)
-// addToFormulary("Paracetamol");
-// console.log(emptyForm);
+const codeine = {
+  name: "Codeine",
+  strength: "30mg",
+  packSize: 10,
+  totalPacks: 20,
+};
 
-// Similarly, calling addToFormulary with the input of 'Ibuprofen' will not add Ibuprofen to the formulary, as it is already there. (Uncomment the following to see this.)
-// addToFormulary("Ibuprofen");
-// console.log(emptyForm);
+const simvastatin = {
+  name: "Simvastatin",
+  strength: "10mg",
+  packSize: 10,
+  totalPacks: 10,
+};
 
-// However, if we call addToFormulary with 'Warfarin' as the argument, Warfarin will be added to the end of the formulary as it is not already there. (Uncomment the following to see this.)
-// addToFormulary("Warfarin");
-// console.log(emptyForm);
+const warfarin = {
+  name: "Warfarin",
+  strength: "3mg",
+  packSize: 50,
+  totalPacks: 5,
+};
+
+const diclofenac = {
+  name: "Diclofenac",
+  strength: "250mg",
+  packSize: 25,
+  totalPacks: "N/A",
+};
+
+addToFormulary(paracetamol.name);
+addToFormulary(ibuprofen.name);
+console.log(formulary);
+
+addToFormulary(amoxicillin.name);
+console.log(formulary);
+
+addToFormulary(codeine.name);
+addToFormulary(diclofenac.name);
+addToFormulary(simvastatin.name);
+addToFormulary(tramadol.name);
+console.log(formulary);
 
 console.log(
-  "There are " +
-    emptyForm.length +
-    " medications in the formulary. Therefore, at most " +
-    emptyForm.length +
-    " medications can be in the inventory."
+  `There are ${formulary.length} medicines in the formulary. Therefore, at most ${formulary.length} medicines can be added to the inventory.`
 );
 
-console.log("");
+// 1.2 Medication Inventory
 
-for (let i = 0; i < emptyForm.length; i++) {
-  if (emptyForm[i] === "Paracetamol") {
-    console.log(
-      "Name: Paracetamol, Strength: 500mg, Pack Size: 50, Total Packs: 100"
-    );
-  } else if (emptyForm[i] === "Ibuprofen") {
-    console.log(
-      "Name: Ibuprofen, Strength: 500mg, Pack Size: 50, Total Packs: 100"
-    );
-  } else if (emptyForm[i] === "Amoxicillin") {
-    console.log(
-      "Name: Amoxicillin, Strength: 250mg, Pack Size: 20, Total Packs: 20"
-    );
-  } else if (emptyForm[i] === "Tramadol") {
-    console.log(
-      "Name: Tramadol, Strength: 50mg, Pack Size: 100, Total Packs: 5"
-    );
-  } else if (emptyForm[i] === "Codeine") {
-    console.log(
-      "Name: Codeine, Strength: 30mg, Pack Size: 10, Total Packs: 20"
-    );
-  } else if (emptyForm[i] === "Simvastatin") {
-    console.log(
-      "Name: Simvastatin, Strength: 10mg, Pack Size: 10, Total Packs: 10"
-    );
-  } else if (emptyForm[i] === "Warfarin") {
-    console.log("Name: Warfarin, Strength: 3mg, Pack Size: 50, Total Packs: 5");
-  }
+let medicine = "Paracetamol";
+
+switch (medicine) {
+  case "Paracetamol":
+    if (formulary.includes("Paracetamol")) {
+      console.log(
+        `Name: ${paracetamol.name}, Strength: ${paracetamol.strength}, Pack Size: ${paracetamol.packSize}, Total Packs: ${paracetamol.totalPacks}`
+      );
+    } else {
+      console.log(
+        "Error! Paracetamol cannot be added to the inventory as it is not in the formulary."
+      );
+    }
+  case "Iboprufen":
+    if (formulary.includes("Ibuprofen")) {
+      console.log(
+        `Name: ${ibuprofen.name}, Strength: ${ibuprofen.strength}, Pack Size: ${ibuprofen.packSize}, Total Packs: ${ibuprofen.totalPacks}`
+      );
+    } else {
+      console.log(
+        "Error! Ibuprofen cannot be added to the inventory as it is not in the formulary."
+      );
+    }
+  case "Amoxicillin":
+    if (formulary.includes("Amoxicillin")) {
+      console.log(
+        `Name: ${amoxicillin.name}, Strength: ${amoxicillin.strength}, Pack Size: ${amoxicillin.packSize}, Total Packs: ${amoxicillin.totalPacks}`
+      );
+    } else {
+      console.log(
+        "Error! Amoxicillin cannot be added to the inventory as it is not in the formulary."
+      );
+    }
+  case "Tramadol":
+    if (formulary.includes("Tramadol")) {
+      console.log(
+        `Name: ${tramadol.name}, Strength: ${tramadol.strength}, Pack Size: ${tramadol.packSize}, Total Packs: ${tramadol.totalPacks}`
+      );
+    } else {
+      console.log(
+        "Error! Tramadol cannot be added to the inventory as it is not in the formulary."
+      );
+    }
+  case "Codeine":
+    if (formulary.includes("Codeine")) {
+      console.log(
+        `Name: ${codeine.name}, Strength: ${codeine.strength}, Pack Size: ${codeine.packSize}, Total Packs: ${codeine.totalPacks}`
+      );
+    } else {
+      console.log(
+        "Error! Codeine cannot be added to the inventory as it is not in the formulary."
+      );
+    }
+  case "Simvastatin":
+    if (formulary.includes("Simvastatin")) {
+      console.log(
+        `Name: ${simvastatin.name}, Strength: ${simvastatin.strength}, Pack Size: ${simvastatin.packSize}, Total Packs: ${simvastatin.totalPacks}`
+      );
+    } else {
+      console.log(
+        "Error! Simvastatin cannot be added to the inventory as it is not in the formulary."
+      );
+    }
+  case "Warfarin":
+    if (formulary.includes("Warfarin")) {
+      console.log(
+        `Name: ${warfarin.name}, Strength: ${warfarin.strength}, Pack Size: ${warfarin.packSize}, Total Packs: ${warfarin.totalPacks}`
+      );
+    } else {
+      console.log(
+        "Error! Warfarin cannot be added to the inventory as it is not in the formulary."
+      );
+    }
 }
-
-// Note that adding the 'else if' for Warfarin will not change the output as Warfarin is not in the formulary. However, if Warfarin were to be added to the formulary first (uncomment above to see this), then it would be added to the inventory.
