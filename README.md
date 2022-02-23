@@ -25,7 +25,7 @@ const paracetamol = {
   totalPacks: 100,
 };
 ```
-Then I created a simple function called addToFormulary, which takes the name of one of the objects (see the paracetamol declared above) as its argument. The function checks whether the argument already exists in the formulary. If it doesn't, then the medication is added to the formulary. If the formulary already contains the medication then an error message is outputted, as a single medication can only be added to the inventory once.
+Then I created a simple function called addToFormulary, which takes the name of one of the objects (see the paracetamol declared above) as its argument. The function checks whether the argument already exists in the formulary. If it doesn't, then the medication is added to the formulary. If the formulary already contains the medication then an error message is outputted, as a single medication can only be added to the formulary once.
 ```javascript
 addToFormulary(paracetamol.name);
 ```
