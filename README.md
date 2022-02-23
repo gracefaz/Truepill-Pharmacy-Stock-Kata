@@ -38,4 +38,24 @@ If we tried to add a medication to the formulary which was already there, an err
 
 **1.2** requires us to add medicines to the inventory so that we can maintain stock levels of medicines in the formulary.
 
-The first thing to note about this section is that only medications that are in the formulary can be added to the inventory. We were instructed to add Warfarin to the inventory, however as it is not in the formulary it cannot be added to the inventory. I managed this by adding multiple if statements to the switch statement which check whether the name of the medicine (for example 'Ibuprofen') is in the formulary. If yes, then the name of the medication is printed in the inventory, as expected. If the medication is not in the formulary, then the inventory prints without this medication.
+I chose to use a switch statement for this task, starting with declaring the 'medicine' variable in the following way.
+```javascript
+let medicine = 'Paracetamol';
+```
+Then we simply need to change the cases to the different medication names. For example
+```javascript
+switch (medicine) {
+  case "Paracetamol":
+    if (formulary.includes("Paracetamol")) {
+      console.log(
+        `Name: ${paracetamol.name}, Strength: ${paracetamol.strength}, Pack Size: ${paracetamol.packSize}, Total Packs: ${paracetamol.totalPacks}`
+      );
+    } else {
+      console.log(
+        "Error! Paracetamol cannot be added to the inventory as it is not in the formulary."
+      );
+    }
+  };
+```
+
+Something to note about this section is that only medications that are in the formulary can be added to the inventory. We were instructed to add Warfarin to the inventory, however as it is not in the formulary it cannot be added. I managed this by adding multiple if statements to the switch statement which check whether the name of the medicine (for example 'Ibuprofen') is in the formulary. If yes, then the name of the medication is printed in the inventory, as expected. If the medication is not in the formulary, then the inventory prints without this medication.
