@@ -35,6 +35,7 @@ console.log(formulary);
 ```
 The same command can be used after adding more medications to check the updated formulary.
 
+
 **1.2** Requires us to add medicatioins to the inventory so that we can maintain stock levels of medications in the formulary.
 
 I chose to use a switch statement for this task, starting with declaring the 'medication' variable in the following way.
