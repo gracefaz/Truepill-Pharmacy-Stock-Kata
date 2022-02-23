@@ -91,9 +91,9 @@ console.log(
 
 // 1.2 Medication Inventory
 
-let medicine = "Paracetamol";
+let medication = "Paracetamol";
 
-switch (medicine) {
+switch (medication) {
   case "Paracetamol":
     if (formulary.includes("Paracetamol")) {
       console.log(
