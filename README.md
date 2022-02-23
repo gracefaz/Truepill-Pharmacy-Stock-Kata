@@ -4,7 +4,7 @@ This repository contains my solution to the take-home coding test for Truepill, 
 
 ## Installation
 
-Code is run within the Node.js environment.
+The code is run within the Node.js environment.
 
 ## Description
 
