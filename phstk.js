@@ -4,7 +4,7 @@ const formulary = [];
 
 const addToFormulary = (nameOfMedicine) => {
   if (formulary.includes(nameOfMedicine)) {
-    return formulary.filter(function (value, index, array) {
+    return formulary.find(function (value, index, array) {
       array.indexOf(value) === index;
     });
   } else {
