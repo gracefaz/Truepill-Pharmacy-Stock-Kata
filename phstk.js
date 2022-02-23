@@ -99,11 +99,19 @@ switch (medicine) {
       console.log(
         `Name: ${paracetamol.name}, Strength: ${paracetamol.strength}, Pack Size: ${paracetamol.packSize}, Total Packs: ${paracetamol.totalPacks}`
       );
+    } else {
+      console.log(
+        "Error! Paracetamol cannot be added to the inventory as it is not in the formulary."
+      );
     }
   case "Iboprufen":
     if (formulary.includes("Ibuprofen")) {
       console.log(
         `Name: ${ibuprofen.name}, Strength: ${ibuprofen.strength}, Pack Size: ${ibuprofen.packSize}, Total Packs: ${ibuprofen.totalPacks}`
+      );
+    } else {
+      console.log(
+        "Error! Ibuprofen cannot be added to the inventory as it is not in the formulary."
       );
     }
   case "Amoxicillin":
@@ -111,11 +119,19 @@ switch (medicine) {
       console.log(
         `Name: ${amoxicillin.name}, Strength: ${amoxicillin.strength}, Pack Size: ${amoxicillin.packSize}, Total Packs: ${amoxicillin.totalPacks}`
       );
+    } else {
+      console.log(
+        "Error! Amoxicillin cannot be added to the inventory as it is not in the formulary."
+      );
     }
   case "Tramadol":
     if (formulary.includes("Tramadol")) {
       console.log(
         `Name: ${tramadol.name}, Strength: ${tramadol.strength}, Pack Size: ${tramadol.packSize}, Total Packs: ${tramadol.totalPacks}`
+      );
+    } else {
+      console.log(
+        "Error! Tramadol cannot be added to the inventory as it is not in the formulary."
       );
     }
   case "Codeine":
@@ -123,17 +139,29 @@ switch (medicine) {
       console.log(
         `Name: ${codeine.name}, Strength: ${codeine.strength}, Pack Size: ${codeine.packSize}, Total Packs: ${codeine.totalPacks}`
       );
+    } else {
+      console.log(
+        "Error! Codeine cannot be added to the inventory as it is not in the formulary."
+      );
     }
   case "Simvastatin":
     if (formulary.includes("Simvastatin")) {
       console.log(
         `Name: ${simvastatin.name}, Strength: ${simvastatin.strength}, Pack Size: ${simvastatin.packSize}, Total Packs: ${simvastatin.totalPacks}`
       );
+    } else {
+      console.log(
+        "Error! Simvastatin cannot be added to the inventory as it is not in the formulary."
+      );
     }
   case "Warfarin":
     if (formulary.includes("Warfarin")) {
       console.log(
         `Name: ${warfarin.name}, Strength: ${warfarin.strength}, Pack Size: ${warfarin.packSize}, Total Packs: ${warfarin.totalPacks}`
+      );
+    } else {
+      console.log(
+        "Error! Warfarin cannot be added to the inventory as it is not in the formulary."
       );
     }
 }
