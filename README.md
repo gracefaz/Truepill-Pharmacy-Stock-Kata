@@ -16,7 +16,7 @@ npm start
 
 The test consists of two main parts: **1.1 Medication Available in the Pharmacy**, and **1.2 Medication Inventory**. 
 
-**1.1** requires us to maintain a list of medications in the formulary (formulary meaning list of medications). To do this I first created objects for all of the relevant medications, for example 
+**1.1** Requires us to maintain a list of medications in the formulary (formulary meaning list of available medications). To do this I first created separate objects for each of the relevant medications from the provided data. For example,
 ```javascript
 const paracetamol = {
   name: "Paracetamol",
@@ -36,7 +36,7 @@ console.log(formulary);
 The same command can be used after adding more medications to check the updated formulary.
 If we tried to add a medication to the formulary which was already there, an error message would be printed telling us that one type of medication can be added to the formulary only once.
 
-**1.2** requires us to add medicatioins to the inventory so that we can maintain stock levels of medications in the formulary.
+**1.2** Requires us to add medicatioins to the inventory so that we can maintain stock levels of medications in the formulary.
 
 I chose to use a switch statement for this task, starting with declaring the 'medication' variable in the following way.
 ```javascript
