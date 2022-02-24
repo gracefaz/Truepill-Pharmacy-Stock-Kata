@@ -62,4 +62,4 @@ Something to note about this section is that only medications that are in the fo
 
 ## Time Spent
 
-Approximately 6 hours spent on this task.
+Approximately 6 hours (maximum recommended time) spent on this task.
