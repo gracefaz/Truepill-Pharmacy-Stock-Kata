@@ -2,15 +2,13 @@
 
 This repository contains my solution (pharmacystockkata.js) to the take-home coding test for Truepill, written in JavaScript. 
 
-## Installation
+## How To Run
 
-The code is run within the Node.js environment. To run locally, type the following commands in the terminal:
+Need to use a preferred IDE such as Visual Studio Code (VSC). The code is run within the Node.js environment. To run locally, type the following command in the terminal:
 ```bash
-npm install
+node pharmacystockkata.js
 ```
-```bash
-npm start
-````
+and press enter to see the output in the console.
 
 ## Description
 
@@ -60,6 +58,6 @@ switch (medication) {
 
 Something to note about this section is that only medications that are in the formulary can be added to the inventory. We were instructed to add Warfarin to the inventory, however as it is not in the formulary it cannot be added. I managed this by adding multiple if statements to the switch statement which check whether the name of the medication (for example 'Ibuprofen') is in the formulary. If yes (or true), then the name of the medication is printed in the inventory, as expected. If the medication is not in the formulary, then the inventory prints without said medication. An error message is also printed to tell the user that the medication cannot be added to the inventory.
 
-## Time Spent
+## More Features
 
-Approximately 6 hours (maximum recommended time) spent on this task.
+Approximately 6 hours (maximum recommended time) were spent on this task. If time had allowed, I would have edited the code to be able to accept user input. For example, asking the user (ie. the pharmacist) which medication they would like to add to the inventory etc. Implementing this would have exceeded the recommened time.
