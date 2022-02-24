@@ -1,4 +1,4 @@
-# Truepill Pharmacy Stock Kata
+# Truepill Coding Test: Pharmacy Stock Kata
 
 This repository contains my solution (pharmacystockkata.js) to the take-home coding test for Truepill, written in JavaScript. 
 
