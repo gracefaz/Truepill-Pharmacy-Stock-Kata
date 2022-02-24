@@ -42,17 +42,17 @@ I chose to use a switch statement for this task, starting with declaring the 'me
 ```javascript
 let medication = 'Paracetamol';
 ```
-Then we simply need to change the cases to the different medication names. For example
+Then we simply need to change the 'case' values to the different medication names. For example
 ```javascript
 switch (medication) {
-  case "Paracetamol":
-    if (formulary.includes("Paracetamol")) {
+  case "Ibuprofen":
+    if (formulary.includes("Ibuprofen")) {
       console.log(
-        `Name: ${paracetamol.name}, Strength: ${paracetamol.strength}, Pack Size: ${paracetamol.packSize}, Total Packs: ${paracetamol.totalPacks}`
+        `Name: ${ibuprofen.name}, Strength: ${ibuprofen.strength}, Pack Size: ${ibuprofen.packSize}, Total Packs: ${ibuprofen.totalPacks}`
       );
     } else {
       console.log(
-        "Error! Paracetamol cannot be added to the inventory as it is not in the formulary."
+        "Error! Ibuprofen cannot be added to the inventory as it is not in the formulary."
       );
     }
   };
