@@ -4,7 +4,7 @@ This repository contains my solution (pharmacystockkata.js) to the take-home cod
 
 ## Installation
 
-The code is run within the Node.js environment. Type the following commands in the terminal:
+The code is run within the Node.js environment. To run locally, type the following commands in the terminal:
 ```bash
 npm install
 ```
