@@ -14,7 +14,7 @@ and press enter to see the output in the console.
 
 The test consists of two main parts: **1.1 Medication Available in the Pharmacy**, and **1.2 Medication Inventory**. 
 
-**1.1** Requires us to maintain a list of medications in the formulary (formulary meaning list of available medications). To do this I first created separate objects for each of the relevant medications from the provided data. For example,
+**1.1** Requires us to maintain a list of medications in the formulary (list of available medications). To do this I first created separate objects for each of the relevant medications from the provided data. For example,
 ```javascript
 const paracetamol = {
   name: "Paracetamol",
