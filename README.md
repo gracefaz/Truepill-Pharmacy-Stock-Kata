@@ -60,4 +60,4 @@ A point to note about this section is that only medications that are in the form
 
 ## More Features
 
-Approximately 6 hours were spent on this task. If time had allowed, I would have edited the code to be able to accept user input. For example, asking the user (ie. the pharmacist) which medication they would like to add to the inventory etc. Implementing this would have exceeded the recommened time. Perhaps another improvement might have been to import the medication data from a CSV file (if this was presented), and refer to the file in the script, rather than having to declare objects for each medication.
+Approximately 6 hours were spent on this task. If time had allowed, I would have edited the code to be able to accept user input. For example, asking the user (ie. the pharmacist) which medication they would like to add to the inventory etc. Implementing this would have exceeded the recommened time. Perhaps another improvement might have been to import the medication data from a CSV file (if presented), and refer to the file in the script, rather than having to declare objects for each medication.
