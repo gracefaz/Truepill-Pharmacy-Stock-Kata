@@ -58,7 +58,7 @@ switch (medication) {
   };
 ```
 
-Something to note about this section is that only medications that are in the formulary can be added to the inventory. We were instructed to add Warfarin to the inventory, however as it is not in the formulary it cannot be added. I managed this by adding multiple if statements to the switch statement which check whether the name of the medication (for example 'Ibuprofen') is in the formulary. If yes, then the name of the medication is printed in the inventory, as expected. If the medication is not in the formulary, then the inventory prints without said medication. An error message is also printed to tell the user that the medication cannot be added to the inventory.
+Something to note about this section is that only medications that are in the formulary can be added to the inventory. We were instructed to add Warfarin to the inventory, however as it is not in the formulary it cannot be added. I managed this by adding multiple if statements to the switch statement which check whether the name of the medication (for example 'Ibuprofen') is in the formulary. If yes (or true), then the name of the medication is printed in the inventory, as expected. If the medication is not in the formulary, then the inventory prints without said medication. An error message is also printed to tell the user that the medication cannot be added to the inventory.
 
 ## Time Spent
 
