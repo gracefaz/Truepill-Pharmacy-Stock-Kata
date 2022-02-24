@@ -60,4 +60,4 @@ Something to note about this section is that only medications that are in the fo
 
 ## More Features
 
-Approximately 6 hours (maximum recommended time) were spent on this task. If time had allowed, I would have edited the code to be able to accept user input. For example, asking the user (ie. the pharmacist) which medication they would like to add to the inventory etc. Implementing this would have exceeded the recommened time.
+Approximately 6 hours were spent on this task. If time had allowed, I would have edited the code to be able to accept user input. For example, asking the user (ie. the pharmacist) which medication they would like to add to the inventory etc. Implementing this would have exceeded the recommened time.
